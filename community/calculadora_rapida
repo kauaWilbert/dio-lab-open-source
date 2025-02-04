@@ -1,0 +1,36 @@
+oi gente, meu nome é kauã e estou pela primeira vez tentando agregar no projeto open source no dio.
+vou mostrar como fazer uma calculadora rápida e funcional em c
+
+//biblioteca padão do c
+#include <stdio.h>
+
+int main ()
+{
+//int pois eh inteiro os numeros ( soma subtração e multiplicação )
+int A, B, soma, sub, mult;
+//float para divisão que pode acontecer do numero ser com casas decimais 
+float div;
+
+  //printf basico para exibir uma mensagem para quem executar o codigo
+printf("Digite o primeiro numero \n");
+  //scanf para receber o número que a pessoa escolher logo %d para receber um número
+scanf("%d", &A);
+printf("Digite o segundo numero \n");
+scanf("%d", &B);
+
+soma = A + B;
+//chamar o float para atribuilo na expressão 
+div = (float)A / B;
+sub = A - B;
+mult = A * B;
+
+printf("Resultados \n");
+printf("soma %d \n", soma);
+printf("divisao %.2f \n", div);
+printf("subtracao %d \n", sub);
+printf("multiplicacao %d \n", mult);
+//sytem("pause"); para o programa não fechar quando axecutar fora da ide
+system("pause");
+}
+
+  
